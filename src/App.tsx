@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import "./App.css";
+import ReactGA from "react-ga4";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // ReactGA.initialize(import.meta.env.VITE_GOOGLE_ANALYTICS_ID);
+  // ReactGA.send({
+  //   hitType: "pageview",
+  //   page: window.location.pathname + window.location.search,
+  // });
 
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+  return <h1 className="text-3xl font-bold underline">Boilerplate Frontend</h1>;
 }
 
-export default App
+export default App;
